@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>zkGreeter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/zksync@0.12.0/dist/main.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="box">
+ <h1>Greeter on zkSync</h1>
+ <h2>This dApp interacts with a smart contract that stores greetings.<br>You can get the owner's greeting or a user's greeting by clicking on button, respectively.<br>You can also set new greetings by clicking on the 'Set User's Greeting' button.</h2>
+<h2>You'r signing to <a href="https://explorer.zksync.io/address/0xf0CF19F798BF5B98b5201906EC3a460075612C83" target="_blank">THIS</a> contract.</h2>
+<button id="connect"><strong>Connect Wallet</strong></button>
+    <button id="getOwnerGreeting"><strong>Get Owner's Greeting</strong></button>
+    <button id="getUserGreeting"><strong>Get User's Greeting</strong></button>
+    <button id="setUserGreeting"><strong>Set User's Greeting</strong></button>
+    <p id="totalGreetings">Total Greetings: <span id="greetingCount"></span></p>
+
+<footer>
+    <h2> 2023 delivered by <a href="https://twitter.com/jaqbek_eth" target="_blank">jaqbek</a>. All rights left.</h2>
+</footer></div>
+    <script src="script.js"></script>
+</body>
+</html>
